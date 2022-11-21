@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    margin: 20px auto;
+    text-align: center;
+}
+.container{
+    width: 75%;
+    margin: 20px auto;
+    /* border: 1px solid black; */
+}
+.boxes{
+    border: 2px solid black;
+    /* width: 80%; */
+    margin: 30px auto;
+    border-radius: 10px;
+}
+.box1{
+    /* border: 1px solid red; */
+    margin: 10px 10px;
+    padding: 20px 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 550;
+    background-color: aqua;
+}
+.box2{
+    /* border: 1px solid red; */
+    margin: 10px 10px;
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 86);
+}
+.blists{
+    /* border: 1px solid green; */
+    width: 95%;
+    margin: 0 auto;
+}
+.differences{
+    margin: 0 auto;
+    width: 90%;
+}
+.diffx{
+    width: 100%;
+    display: flex;
+}
+.diff1{
+    width: 100%;
+}
+.diff2{
+    width: 100%;
+}
+.diff11{
+    width: 100%;
+    padding-top: 10px;
+}
+.diff22{
+    width: 100%;
+    padding-top: 10px;
+}
+.grid-container{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid black;
+    background-color: rgb(236, 236, 236);
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    row-gap: 30px;
+}
+.grid-item{
+    width: 100%;
+    border: 1px solid rgb(100, 100, 100);
+    box-shadow: 0px 0px 15px rgb(100, 100, 100);
+}
+.grid-box1{
+    text-align: center;
+    padding: 90px 80px;
+    background-color: rgb(73, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.grid-box2{
+    padding: 15px 20px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.grid-content{
+    display: flex;
+    /* border: 1px solid green; */
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+.grid-button{
+    border: 1px solid rgb(61, 61, 61);
+    display: flex;
+}
+.grid-button a{
+    padding: 5px 15px;
+    border: 1px solid rgb(61, 61, 61);
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+.grid-button a:hover{
+    background-color: gray;
+    color: white;
+}
