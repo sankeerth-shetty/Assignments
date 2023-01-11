@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="M2.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- <script type="text/JavaScript" src="jquery-3.6.3.min.js"></script> -->
+    <title>Assignment 5</title>
+    <style>
+        .circle{
+            background-color: tomato;
+            width: 10%;
+            height: 95px;
+            border: 1px solid tomato;
+            border-radius: 50px;
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Module 5 (JQUERY) Assignment</h1>
+    <hr>
+    <section class="container">
+        <div class="boxes">
+            <div class="box1">
+                <p>1) What is JQuery?</p>
+            </div>
+            <div class="box2">
+                <p> Ans.<br><br>
+                <p> jQuery is a JavaScript library that helps in DOM manipulation. It is fast, light-weight, feature-rich and flexible. The purpose of jQuery is to make it much easier to use JavaScript on your website. It makes things like HTML, AJAX, animation, and event handling convenient by using APIs that work across a range of browsers. </p>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <p>2) How to Apply CSS Using JQuery?</p>
+            </div>
+            <div class="box2">
+                <p> Ans.<br><br>
+                <p> css() method in jQuery is used to change the style property of the selected element. </p><br>
+                <p> For example:</p>
+                <p> $(“p”).css(“background-color”,”red”);<br>
+                    Or<br>
+                    $(“p”).css({“background-color”: “red”, “font-size”: “20px”});
+                </p>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <p>3) How to Add Class and Remove Class in JQuery?</p>
+            </div>
+            <div class="box2">
+                <p> Ans.<br><br>
+                <p> to add class in jquery we use addClass() method </p><br>
+                <p> For example:<br>
+                    $(“p”).addClass(“bg-red”);
+                </p><br>
+                <p> To remove class in jquery we use removeClass() method</p><br>
+                <p> For example:<br>
+                    $(“p”).removeClass(“bg-red”);
+                </p>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <p>4) JQuery Animation?</p>
+            </div>
+            <div class="box2">
+                <p> Ans.<br><br>
+                <p> To add animation in jquery we use animate() method to create animations. </p><br>
+                <p> For example:<br>
+                    $("div").animate({ “left”: “300px”, “opacity”: “0.7”});
+                </p><br>
+                <button class="button">Click me</button><br><br><br><br><br><br>
+                <div style="position:relative"><div class="circle"></div></div>
+            </div>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <p>5) How to create slider with animation?</p>
+            </div>
+            <div class="box2">
+                <p> Ans.<br><br>
+                <p> To make slider in jquery we use slider()<br><br>
+                    For example:<br>
+                    $( "#slider" ).slider({  "value": "50",  "animate":"fast",  "orientation": "horizontal" }); </p><br>
+                <div id="slider"></div>
+            </div>
+        </div>
+        <script> 
+            $(document).ready(function(){
+              $(".button").click(function(){
+                $(".circle").animate({"left": "300px", "opacity": "0.7"});
+              });
+
+              $( "#slider" ).slider({  
+                  "value": "50",  
+                  "animate":"fast",  
+                  "orientation": "horizontal"  
+               }); 
+            });
+        </script>
+</body>
+</html>
+
+
+<!-- <html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      <title>jQuery UI Slider functionality</title>
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      Javascript
+      <script>
+         $(function() {
+            $( "#slider-2" ).slider({
+               value: 60,
+               animate:"slow",
+               orientation: "horizontal"
+            });
+         });
+      </script> -->
+   <!-- </head>
+   
+   <body>
+      HTML 
+      <div id = "slider-2"></div>
+   </body> -->
+<!-- </html> --> 
