@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.background{
+    background: url('./background.png')no-repeat center center/cover;
+    width: 100%;
+    /* height: 700px; */
+    background-position: 0px 0px;
+    clip-path: polygon(100% 0%, 100% 81.05%, 50% 100%, 0% 81.05%, 0% 0%);
+    box-shadow: inset 0px -80px 90px rgb(34, 34, 34);
+}
+
+.bg-wrapper{
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    /* height: 700px; */
+}
+
+.container{
+    width: 63%;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+
+.container2{
+    width: 95%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    padding-bottom: 50px;
+}
+
+.nav{
+    margin-top: 25px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bspace1{
+    width: 14%;
+}
+
+.bspace2{
+    width: 68%;
+    /* justify-content: space-around; */
+}
+
+.logo{
+    width: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.wb{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid white; */
+    font-size: 12px;
+}
+
+.wb a{
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+    /* border: 1px solid white; */
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.wb:hover a{
+    color: #e74c3c;
+    border-bottom: 1px solid #e74c3c;
+}
+
+.content{
+    align-items: center;
+}
+
+.cc1, .cc3{
+    margin-top: 210px;
+    width: 10%;
+}
+
+.cc1 a, .cc3 a{
+    text-decoration: none;
+}
+
+.cc2{
+    color: rgb(241, 241, 241);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+.cc2 h1{
+    margin-top: 18px;
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+
+.con1{
+    width: 42%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    line-height: 23px;
+    color: rgb(224, 224, 224);
+}
+
+.cc3{
+    display: flex;
+    justify-content: end;
+    /* border: 1px solid white; */
+}
+
+.b1b{
+    width: 28%;
+}
+
+.b2b{
+    width: 28%;
+    transform: rotate(180deg);
+    text-align: end;
+}
+
+.design{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+    /* justify-content: space-between; */
+}
+
+.hr{
+    width: 40%;
+    height: 0px;
+}
+
+.circle{
+    border: 1px solid #e74c3c;
+    height: 11px;
+    width: 5%;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+
+.conb{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.conb1{
+    width: 34%;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+}
+
+.ca1{
+    /* border: 1px solid white; */
+    text-decoration: none;
+    width: 47%;
+    font-size: 12px;
+    padding: 15px 0px;
+    color: white;
+    background-color: #e74c3c;
+}
+
+.ca2{
+    border: 1px solid white;
+    text-decoration: none;
+    width: 47%;
+    font-size: 12px;
+    padding: 15px 0px;
+    color: white;
+}
+
+.ca2:hover{
+    background-color: white;
+    color: black;
+}
+
+.bbox{
+    padding: 8px 11px;
+    /* border: 1px solid white; */
+    color: rgb(49, 49, 49);
+    background-color: rgba(102, 102, 102, 0.7);
+}
+
+.bbox:hover{
+    color: white;
+    background-color: #e74c3c;
+}
+
+.anc1{
+    top: -35px;
+    width: 78px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.anchor{
+    width: 55px;
+    margin-left: 10px;
+}
+
+.dbs{
+    width: 32%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.dimg1{
+    padding: 25px 20px;
+}
+
+.dimg2{
+    padding: 22px 23px;
+}
+
+.dimg3{
+    padding: 18px 25px;
+}
+
+.dimg4{
+    padding: 20.5px 23px;
+}
+
+.divb1{
+    border: 1px solid #999999;
+}
+
+.dbs:hover .divb1{
+    transform: rotate(44.5deg);
+    border: 1px solid #eb3e2a;
+}
+
+.dbs:hover .dbimg{
+    transform: rotate(315deg);
+}
+
+.dbs:hover ~ h4{
+    color: #e74c3c;
+}
+
+.bxs{
+    text-align: center;
+}
+
+.hr2{
+    padding: 12px 0px;
+    margin: 0 auto;
+    width: 25%;
+}
+
+.bxs p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 9px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+    color: #999999;
+}
