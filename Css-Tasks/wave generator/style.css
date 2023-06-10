@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.space1{
+    height: 566px;
+}
+
+.wrapper{
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.background{
+    background: url('./background.png')no-repeat center center/cover;
+    width: 100%;
+}
+
+.bgwrapper{
+    background-color: rgba(34, 34, 34, 0.7);
+    width: 100%;
+}
+
+.wave{
+    width: 240%;
+    position: absolute;
+    bottom: 88px;
+    right: -650px;
+    /* opacity: 30%; */
+    /* border: 5px solid #ff1900; */
+}
+
+.team{
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.team h1{
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+
+.team p {
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.row{
+    display: flex;
+}
+
+.teamsDiv{
+    text-align: center;
+    width: 15%;
+    margin: auto;
+}
+
+.dot{
+    border: 1px solid #e74c3c;
+    width: 5%;
+    margin: auto;
+    border-radius: 100%;
+    height: 10px;
+    background-color: #e74c3c;
+}
+
+.roundimg{
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.people{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #e74c3c;
+    border-radius: 50%;
+}
+
+.pl1{
+    bottom: 260px;
+    position: absolute;
+    background: url('./ethel.png')no-repeat center center/cover;
+    width: 60px;
+    transition: 0.5s ease-in
+}
+
+.pl2{
+    bottom: 316px;
+    position: absolute;
+    background: url('./aiden.png')no-repeat center center/cover;
+    width: 60px;
+    transition: 0.5s ease-in
+}
+
+.pl3{
+    bottom: 260px;
+    position: absolute;
+    background: url('./fannie.png')no-repeat center center/cover;
+    width: 60px;
+    transition: 0.5s ease-in
+}
+
+.pl4{
+    bottom: 233px;
+    position: absolute;
+    background: url('./ethel.png')no-repeat center center/cover;
+    width: 60px;
+    transition: 0.5s ease-in
+}
+
+.pl5{
+    bottom: 316px;
+    position: absolute;
+    background: url('./aiden.png')no-repeat center center/cover;
+    width: 60px;
+    transition: 0.5s ease-in
+}
+
+.people:hover{
+    transform: scale(1.4);
+    transition: 0.5s ease-in-out;
+    box-shadow: -4px 3px 10px black;
+}
+
+.people:hover .orangebg{
+    background-color: rgba(231, 76, 60, 0.4);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.people:hover ~ .vrhrdiv .verticalhr{
+    display: block;
+}
+
+.people:hover ~ .vrtext{
+    display: block;
+}
+
+.verticalhr{
+    width: 50%;
+    border-right: 1px solid white;
+    height: 30px;
+    margin-left: 28px;
+    display: none;
+}
+
+.vrhrdiv{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+}
+
+.vrtext{
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.vrtext h3{
+    color: #e74c3c;
+}
+
+.vh1{
+    margin-top: 210px;
+}
+
+.vh2{
+    margin-top: 155px;
+}
+
+.vh3{
+    margin-top: 210px;
+}
+
+.vh4{
+    margin-top: 238px;
+}
+
+.vh5{
+    margin-top: 155px;
+}
+
+.vt1{
+    margin-top: 250px;
+    left: 105px;
+}
+
+.vt2{
+    margin-top: 195px;
+    left: 378px;
+}
+
+.vt3{
+    margin-top: 250px;
+    left: 650px;
+}
+
+.vt4{
+    margin-top: 280px;
+    left: 930px;
+}
+
+.vt5{
+    margin-top: 195px;
+    right: 45px;
+}
