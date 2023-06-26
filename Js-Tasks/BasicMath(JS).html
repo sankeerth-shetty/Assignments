@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="0" cellspacing="0" style="border: 2px solid; padding: 10px 0px;" width="28%" cellpadding="5">
+        <tr>
+            <td colspan="2" align="center" style="padding-bottom: 10px;"><br>Maths Operation</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp; Enter 1st number: &nbsp;&nbsp;&nbsp;</td>
+            <td><input type="number" name="num1" id="num1"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp; Enter 2nd number: &nbsp;&nbsp;&nbsp;</td>
+            <td><input type="number" name="num2" id="num2"></td>
+        </tr>
+        <tr>
+            <td style="padding: 13px 0px;">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value=" + " style="padding: 3px 12px; font-size: large;" id="add" 
+                    onclick="add()">
+                <input type="button" value=" - " style="padding: 3px 12px; font-size: large;" id="sub"
+                    onclick="sub()">
+                <input type="button" value=" * " style="padding: 3px 12px; font-size: large;" id="mul"
+                    onclick="mul()"><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" value=" / " style="margin-top: 3px; padding: 3px 15px; font-size: large;" id="div"
+                    onclick="div()">
+                <input type="button" value=" % " style="padding: 3px 7px; font-size: large;" id="mod"
+                    onclick="mod()">
+            </td>
+            <td align="center">Answer is: <span id="ans" style="color: blue;"></span></td>
+        </tr>
+    </table>
+
+    <script>
+        function add() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            document.getElementById('ans').innerText = parseFloat(num1) + parseFloat(num2);
+        }
+
+        function sub() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            document.getElementById('ans').innerText = parseFloat(num1) - parseFloat(num2);
+        }
+
+        function mul() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            document.getElementById('ans').innerText = parseFloat(num1) * parseFloat(num2);
+        }
+
+        function div() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            document.getElementById('ans').innerText = parseFloat(num1) / parseFloat(num2);
+        }
+
+        function mod() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            document.getElementById('ans').innerText = parseFloat(num1) % parseFloat(num2);
+        }
+    </script>
+</body>
+
+</html>

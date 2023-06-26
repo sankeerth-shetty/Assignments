@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #fff;
+            background-color: black;
+        }
+        .heading{
+            margin: 25px 0px;
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .slide-border{
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        .small-b{
+            border: 1px solid;
+            width: 150px;
+            height: 120px;
+            overflow: hidden;
+        }
+        .medium-b{
+            border: 1px solid;
+            width: 200px;
+            height: 170px;
+            overflow: hidden;
+        }
+        .large-b{
+            border: 1px solid;
+            width: 250px;
+            height: 220px;
+            overflow: hidden;
+        }
+        .imgs1{
+            width: 150px;
+            height: 120px;
+        }
+        .imgs2{
+            width: 200px;
+            height: 170px;
+        }
+        .imgs3{
+            width: 250px;
+            height: 220px;
+        }
+        .hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Simple Javascript Slider</h1>
+    <br>
+    <div class="slide-border">
+        <div class="small-b"><img src="./img4.jpg" class="aimg1 imgs1" alt="" id="i1"></div>
+        <div class="medium-b"><img src="./img5.jpg" class="aimg2 imgs2" alt="" id="i2"></div>
+        <div class="large-b"><img src="./img1.jpg" class="aimg3 imgs3" alt="" id="i3"></div>
+        <div class="medium-b"><img src="./img2.jpg" class="aimg4 imgs2" alt="" id="i4"></div>
+        <div class="small-b"><img src="./img3.jpg" class="aimg5 imgs1" alt="" id="i5"></div>
+    </div>
+    <div class="slide-border" style="padding: 40px;">
+        <div></div>
+        <div><i class="fa-solid fa-arrow-left fa-2xl hover" onclick="left()"></i></div>
+        <div><i class="fa-solid fa-arrow-right fa-2xl hover" onclick="right()"></i></div>
+        <div></div>
+    </div>
+    <div id="outputs"></div>
+
+    <script>
+        var i = 1;
+        function right(){
+            i += 1;
+            let nums2 = i;
+            
+            if(nums2 === 1){
+                document.getElementById('i1').src = './img4.jpg';
+                document.getElementById('i2').src = './img5.jpg';
+                document.getElementById('i3').src = './img1.jpg';
+                document.getElementById('i4').src = './img2.jpg';
+                document.getElementById('i5').src = './img3.jpg';
+            } 
+
+            if(nums2 === 2){
+                document.getElementById('i1').src = './img5.jpg';
+                document.getElementById('i2').src = './img1.jpg';
+                document.getElementById('i3').src = './img2.jpg';
+                document.getElementById('i4').src = './img3.jpg';
+                document.getElementById('i5').src = './img4.jpg';
+            } 
+
+            if(nums2 === 3){
+                document.getElementById('i1').src = './img1.jpg';
+                document.getElementById('i2').src = './img2.jpg';
+                document.getElementById('i3').src = './img3.jpg';
+                document.getElementById('i4').src = './img4.jpg';
+                document.getElementById('i5').src = './img5.jpg';
+            }
+
+            if(nums2 === 4){
+                document.getElementById('i1').src = './img2.jpg';
+                document.getElementById('i2').src = './img3.jpg';
+                document.getElementById('i3').src = './img4.jpg';
+                document.getElementById('i4').src = './img5.jpg';
+                document.getElementById('i5').src = './img1.jpg';
+            }
+
+            if(nums2 === 5){
+                document.getElementById('i1').src = './img3.jpg';
+                document.getElementById('i2').src = './img4.jpg';
+                document.getElementById('i3').src = './img5.jpg';
+                document.getElementById('i4').src = './img1.jpg';
+                document.getElementById('i5').src = './img2.jpg';
+            }
+
+            if(nums2 >= 6){
+                i = 0;
+            }
+        }
+
+
+        function left(){
+            i -= 1;
+            let nums2 = i;
+            
+            if(nums2 === 1){
+                document.getElementById('i1').src = './img4.jpg';
+                document.getElementById('i2').src = './img5.jpg';
+                document.getElementById('i3').src = './img1.jpg';
+                document.getElementById('i4').src = './img2.jpg';
+                document.getElementById('i5').src = './img3.jpg';
+            } 
+
+            if(nums2 === 2){
+                document.getElementById('i1').src = './img5.jpg';
+                document.getElementById('i2').src = './img1.jpg';
+                document.getElementById('i3').src = './img2.jpg';
+                document.getElementById('i4').src = './img3.jpg';
+                document.getElementById('i5').src = './img4.jpg';
+            } 
+
+            if(nums2 === 3){
+                document.getElementById('i1').src = './img1.jpg';
+                document.getElementById('i2').src = './img2.jpg';
+                document.getElementById('i3').src = './img3.jpg';
+                document.getElementById('i4').src = './img4.jpg';
+                document.getElementById('i5').src = './img5.jpg';
+            }
+
+            if(nums2 === 4){
+                document.getElementById('i1').src = './img2.jpg';
+                document.getElementById('i2').src = './img3.jpg';
+                document.getElementById('i3').src = './img4.jpg';
+                document.getElementById('i4').src = './img5.jpg';
+                document.getElementById('i5').src = './img1.jpg';
+            }
+
+            if(nums2 === 5){
+                document.getElementById('i1').src = './img3.jpg';
+                document.getElementById('i2').src = './img4.jpg';
+                document.getElementById('i3').src = './img5.jpg';
+                document.getElementById('i4').src = './img1.jpg';
+                document.getElementById('i5').src = './img2.jpg';
+            }
+
+            if(nums2 <= 0){
+                i = 6;
+            }
+        }
+    </script>
+</body>
+</html>

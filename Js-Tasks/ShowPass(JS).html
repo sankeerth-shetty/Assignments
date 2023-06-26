@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <label for="password">Enter Password:</label>
+                <input type="password" name="password" id="password">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="password" id="spass" onclick="spass()">
+                <label for="spass">show password</label>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function spass(){
+            let pass = document.getElementById('password');
+            if(pass.type === "password"){
+                pass.type = "text";
+            } else {
+                pass.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
