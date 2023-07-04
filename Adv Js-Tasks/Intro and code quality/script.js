@@ -12,3 +12,12 @@
 // null === +"\n0\n" //false
 
 
+//Q3 Will alert be shown?
+// if ("0") {
+//     alert( 'Hello');
+// }
+// yes the alert will be shown
+
+
+//Q4 What is the code below going to output?
+// alert( null || 2 || undefined );
