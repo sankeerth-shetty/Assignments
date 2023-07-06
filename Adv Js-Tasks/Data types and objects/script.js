@@ -74,17 +74,38 @@
 
 
 //Q5 Sum the properties There is a salaries object with arbitrary number of salaries. Write the function sumSalaries(salaries) that returns the sum of all salaries using Object.values and the for..of loop.If salaries is empty, then the result must be 0.
-let salaries = {
-    "John": 100,
-    "Pete": 300,
-    "Mary": 250
-};
-let sumSalaries = (salaries) => {
-    let sums = 0;
-    for(let total of Object.values(salaries)){
-        sums = sums + total;
-    }
-    return sums
-}
-alert( sumSalaries(salaries) ); // 650
+// let salaries = {
+//     "John": 100,
+//     "Pete": 300,
+//     "Mary": 250
+// };
+// let sumSalaries = (salaries) => {
+//     let sums = 0;
+//     for(let total of Object.values(salaries)){
+//         sums = sums + total;
+//     }
+//     return sums
+// }
+// alert( sumSalaries(salaries) ); // 650
+
+
+
+// Q6 Destructuring assignment We have an object: Write the Destructuring assignment that reads:
+// let user = {
+//     name: "John",
+//     years: 30
+// };
+
+// a) Name property into the variable name.
+// const { name: Name } = user;   
+// console.log(Name);
+
+// b) Year's property into the variable age.
+// const { years: Age } = user;
+// console.log(Age);
+
+// c) isAdmin property into the variable isAdmin (false, if no such property).
+// const { isAdmin: isAdmin = false} = user;
+// console.log(isAdmin);
+
 
