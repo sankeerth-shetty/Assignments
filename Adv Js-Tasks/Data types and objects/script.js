@@ -35,7 +35,7 @@
 
 
 //Q2 Is array copied?
-//Yes array is copied
+// Yes array is copied
 // let fruits = ["Apples", "Pear", "Orange"]; // push a new value into the "copy" let
 // shoppingCart = fruits;
 // shoppingCart.push("Banana"); // what's in fruits?
@@ -107,5 +107,22 @@
 // c) isAdmin property into the variable isAdmin (false, if no such property).
 // const { isAdmin: isAdmin = false} = user;
 // console.log(isAdmin);
+
+
+
+// Q7 Turn the object into JSON and back Turn the user into JSON and then read it back into another variable.
+
+// let user = {
+//     name: "John Smith",
+//     age: 35
+// };
+
+// let jsonfile = JSON.stringify(user) //turns user into JSON
+// console.log(jsonfile);
+
+// let read = JSON.parse(jsonfile) //reads back
+// console.log(read)
+
+
 
 
